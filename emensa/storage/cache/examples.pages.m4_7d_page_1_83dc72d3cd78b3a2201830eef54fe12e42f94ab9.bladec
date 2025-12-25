@@ -1,0 +1,9 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title', 'Seite 1'); ?>
+
+<?php $this->startSection('main'); ?>
+ <h3>Willkommen auf Seite 1!</h3>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('examples.layout.m4_7d_layout'); } ?>
